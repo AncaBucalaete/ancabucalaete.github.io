@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function firstFunction() {
+            console.log("before:" + document.getElementById("valoareId").innerHTML);
+            let val = document.getElementById("valoareId").innerHTML;
+            val++;
+            console.log("val:" + val);
+            document.getElementById("valoareId").innerHTML = val;
+            console.log("after:" + document.getElementById("valoareId").innerHTML);
+        }
+ 
+        function clearFunction() {
+            console.log("before:" + document.getElementById("valoareId").innerHTML);
+            val = 0;
+            document.getElementById("valoareId").innerHTML = val;
+            console.log("after:" + document.getElementById("valoareId").innerHTML);
+        }
+    </script>
+</head>
+
+<body>
+    <hr2>Imcrementare valoare</hr2>
+    <p id="valoareId">0</p>
+    <button type="button" onclick="firstFunction()">Increment</button>
+    <button type="button" onclick="clearFunction()">Clear</button>
+</body>
+
+</html>
